@@ -1,0 +1,28 @@
+body {
+    background: #e3f7f7;
+    color: #0a295b;
+    margin-top: 1 em;
+
+}
+
+html {
+    font-size: 100%;
+
+}
+
+main {
+    margin-top: 2em;
+    padding: 3em;
+    margin-left: 4em;
+}
+
+
+aside {
+    padding: 1em 1em;
+    background: #e4e3f7;
+}
+
+li a {
+    color: antiquewhite;
+    text-decoration: none;
+}

@@ -1,0 +1,24 @@
+{% extends "agora/starter.html" %}
+{% block content %}
+<div class="row">
+    <main id="Main" class="col-sm">
+        <!-- Displays a one-time message upon new user creation. -->
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        <h1>Agora Dash</h1>
+        {% for topic in topics %}
+        <h2>{{topic.title}}</h2>
+        <p>By {{topic.author}} on {{topic.date}}</p>
+        <p>{{topic.content}}</p>
+        {% endfor %}
+
+
+    </main>
+
+</div>
+{% endblock content%}
